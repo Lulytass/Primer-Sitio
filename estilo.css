@@ -64,6 +64,9 @@ header .menuprincipal ul li{
   border-top: solid 1px #E5E5E5;
   padding: 0.80em 0;
 }
+.menuprincipal .menu1 .menu a:hover{
+  color:brown;
+}
 /*submenu dentro de recetas de...*/
 #submenu .submenu1{
   display: none;
@@ -189,6 +192,11 @@ nav a img{
   margin-left: 2rem;
   float: left;
   margin-right: 3rem;
+}
+nav a img:hover{
+  width: 30rem;
+  height: 25rem;
+  margin-left: 3.5rem;
 }
 nav p{
 
