@@ -5,37 +5,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 *{
     margin: 0px;
-    padding: 1.6vh 0.73206vw;
+    padding: 10px;
     box-sizing: border-box;
-}
-html{
-    background-color: black;
 }
 .padre{
     display: flex;
     flex-flow: column nowrap;
 }
-/*SCROLLBAR*/
-::-webkit-scrollbar{
-    width: 15px;
-}
-::-webkit-scrollbar-track{
-    background: rgb(46, 194, 160);
-    border-radius: 50px;
-}
-::-webkit-scrollbar-thumb{
-    background: #ffffff;
-    border-radius: 50px;
-}
 /*TITULO Y MENU*/
 .header{
-    background: url("imagenes/menu2.jpg");
+    background: url("imagenes/menu1.jpg");
     background-position: center;
     background-attachment:contain;
     background-size: cover;
     display: flex;
     flex-flow: column nowrap;
-    font-family:  sans-serif;
+    font-family: "bolditalic.ttf", sans-serif;
+    font-size: .75rem;
+
 
 }
 .barra{
@@ -47,23 +34,19 @@ html{
     flex: 2 1 auto;
 }
 .nav{
-    
+   
     flex: 7 1 auto;
     display: flex;
-    
-    
 }
 .nav  a{
     text-decoration: none;
-    font-size: 1rem;
-    padding: 0 0.7320vw;
-    letter-spacing: 0.063rem; 
-    font-weight: bolder;
-    color: black;
+    color: #fff;
+    font-size: 11px;
+    padding: 0 10px;
+    letter-spacing: 2px;   
 }
 .nav li{
     list-style: none;
-    background-color: rgba(189, 147, 147, .5);
 }
 /*SUBMENU*/
 .submenu1{
@@ -81,43 +64,44 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 .cuerpo .articulos{
-    background-color: rgb(215, 58, 51);
+    background-color: crimson;
     flex: 8 1 auto;
     display: flex;
     flex-flow: row wrap;
 }
 .cuerpo .articulos .texto{
-    background-color: rgb(243, 181, 46);
+    background-color: darkorange;
     flex: 1 1 40%;
 }
 .texto h2 a{
     text-decoration: none;
-    color:rgb(38, 76, 89);
+    color:black;
 }
 .cuerpo .articulos .video{
-    background-color: rgb(243, 181, 46);
+    background-color: darkorange;
     flex: 1 1 40%; 
 }
 .cuerpo .articulos .receta{
-    background-color: rgb(243, 181, 46);
+    background-color: darkorange;
     flex: 1 1 40%;
 }
-
 .cuerpo .articulos .platoterminado{
     flex: 1 1 40%;
+    align-self:center;
 }
 .cuerpo .articulos .platoterminado img{
-    justify-self: center;
+    height: 80vh;
+
 }
 .cuerpo .articulos .ingredientes{
-    background-color: rgb(243, 181, 46);
+    background-color: darkorange;
     flex: 1 1 40%;
 }
 .ingredientes ul li{
     list-style: none;
 }
 .ingredientes ul li:hover{
-    color: rgb(215, 58, 51);
+    color: crimson;
     font-weight: bold;
 }
 
@@ -125,31 +109,30 @@ html{
     text-align: center;
 }
 .ingredientes h4{
-    text-decoration: underline rgb(215, 58, 51) 0.188rem;
+    text-decoration: underline crimson 3px;
 }
 .cuerpo .articulos .masa{
-    background-color: rgb(243, 181, 46);
+    background-color: darkorange;
     flex: 1 1 40%;
 }
 .cuerpo .articulos .relleno{
-    background-color: rgb(243, 181, 46);
+    background-color: darkorange;
     flex: 1 1 40%;
 }
 .cuerpo .articulos .rellenoyarmado{
-    background-color: rgb(243, 181, 46);
+    background-color: darkorange;
     flex: 1 1 40%;
 }
 .rellenoyarmado li h3:hover{
-    color: rgb(215, 58, 51);
+    content: "hola";
+    color: crimson;
     
 }
-/*REDES*/
 .cuerpo .articulos .redes{
     justify-content: space-around;
     flex: 1 1 100%;
     display: flex;
 }
-
 .redes img{
     width: 4.3923vw;
     height:  9.6vh; 
@@ -158,73 +141,56 @@ html{
 
 /*ASIDE*/
 .aside{
-    background-color: rgb(215, 58, 51);
+    background-color: crimson;
     flex: 2 1 auto;
-    display: flex;
-    flex-direction: column;
 }
 .aside .imagen, .gyozamordida, .ramen, .cierre{
-    background-color: rgb(215, 58, 51);
-    
+    background-color: crimson;
+
 }
-aside .imagen{
-    vertical-align:middle;
+.aside .gyozamordida img{
+    width: 18.5944vw;
+    height:40.64vh;
 }
 .aside .salsa{
-    background-color: rgb(243, 181, 46);
+    background-color: darkorange;
 }
 .recetasalsa h4, p{
     text-align: center;
 }
 .aside .proximasrecetas{
-    background-color: rgb(243, 181, 46);
+    background-color: darkorange;
 }
+
+.aside .proximasrecetas .ramen img{
+    width: 18.5944vw;
+    height: 40.64vh;
+}
+
 .aside .proximasrecetas .cierre img{
-    background-color: rgb(215, 58, 51);
+    background-color: crimson;
 
 }
 .loqueviene h3{
     text-align: center;
-    text-decoration: underline rgb(215, 58, 51) 0.188rem;
+    text-decoration: underline crimson 3px;
 }
 /*FOOTER*/
 .footer{
     background-color: black;
     display: flex;
     justify-content: center;
+    
+
 }
 .footer p,a{
-    color: rgb(215, 58, 51);
+    color: crimson;
     text-decoration: none;
-}
-@media all and (max-width: 1300px){
-.cuerpo{
-    display: flex;
-    }
-.logo img{
-    height: 30vh;
-    width: 20hw;
-}
-.nav{
-    flex-direction: column;
-    align-items: center;
-}
-article .videoreceta, .imgplatoterminado{
-    display: flex;
-    justify-content: center;
+
 }
 
-@media all and(max-width: 575px){
-.articulos{
-    flex-direction: column;
-}
-aside {
-    display: none;
-}
-@media all and(max-width: 400px){
- 
-}
-}
+@media(max-width: 800px){
 
+}
 
 

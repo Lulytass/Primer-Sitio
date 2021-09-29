@@ -1,172 +1,137 @@
-/*general*/
-html, body{
-  width: 100%;
+@font-face {
+    font-family: "bolditalic.ttf";
+    src: url("fuentes/bolditalic.ttf");
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+body{
+    background-color:rgb(38, 76, 89);
+}
+/*SCROLLBAR*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(46, 194, 160);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background: #ffffff;
+    border-radius: 50px;
+}
+/*TITULO Y MENU*/
+.header{
+    background: url("imagenes/menu2.jpg");
+    background-position: center;
+    background-attachment:contain;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family:  sans-serif;
+}
+.barra{
+    display: flex;
+    align-items: center;
+}
+.logo{
+ 
+    flex: 2 1 auto;
+}
+.nav{
 
-body
-{
-	margin: 0 auto;
-	padding: 0px;
-	background: #fff;
-	font-family: sans-serif;
-	font-weight: 300;
-	color: #000;
-  background: url(imagenes/fondoclaro.jpg) repeat;
+    flex: 7 1 auto;
+    display: flex;
+    
 }
-/*formulario*/
-main{
-  background: url(imagenes/head.jpg);
-  width:47%;
-  margin-left: 25.8823vw;
-  border-radius: 25px;
+.nav  a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    padding: 0 10px;
+    letter-spacing: 0.063rem; 
+    font-weight: bolder; 
+    
 }
-form {
-  background-color: rgba(218, 165, 32, 0.5);
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  margin-right: 11.7647vw;
-  
+.nav li{
+    list-style: none;
+    background-color: rgba(189, 147, 147, .5);
 }
-MAIN H2{
-  text-align: center;
-  font-family: cursive;
-  margin-bottom: 0;
-  align-self: center;
-  height: 6.4vh;
-  margin-top: 2.6490vh;
-}
-form div{
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: column;
-}
-.formulario input{
-  width: 50%;
-  margin: 0 auto;
-}
-.formulario .boton{
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-
-/*TITULO*/
-header{
-  height: 38.4vh;
- margin-top: 1.5%;
-  background: url(imagenes/head.jpg) repeat;
-  display: flex;
-}
-#titulo{
-  display: flex;
-  top:  7.68vh;
-  left: 2.3426vw;
-}
-header h1{
-  display: inline-block;
-  font-size: 2.5em;
-  color: #000;
-}
-header h1:hover{
-  font-size: 7.5em;
-  color: rgba(218, 165, 32, 0.5);
-}
-/*MENU*/
-header .menuprincipal .menu1  {
-  position: absolute;
-  right: 0;
-  top: 4.5vh;
-}
-header .menuprincipal  .menu1 ul{
-  display: inline-block;
-  font-family: 'Stick No Bills', sans-serif;
-  list-style: none;
-}
-header .menuprincipal ul li{
-  list-style: none;
-	float: right;
-	text-align: center;
-}
-.menuprincipal li a, .menuprincipal .submenu1 li a{
-  display: block;
-  padding: 0.80em 1.5em;
-  letter-spacing: 0.20em;
-  text-decoration: none;
-  font-size: 0.90em;
-  font-weight: 600;
-  outline: 0;
-  color: #000;
-}
-
-.menuprincipal .menu1 .menu{
-  border-top: solid 1px #E5E5E5;
-  padding: 0.80em 0;
-}
-.menuprincipal .menu1 .menu a:hover{
-  color:brown;
-}
-/*submenu dentro de recetas de...*/
-
-#submenu .submenu1{
-  display: none;
-  position: absolute;
+/*SUBMENU*/
+.submenu1{
+    display: none;
 }
 #submenu:hover .submenu1{
-  color: #000;
-  background-color: rgba(218, 165, 32, 0.5);
-  display: block;
-  width: 15%;
+    display: list-item;
 }
 
-
-.submenu1 li:hover{
-  color: rgba(218, 165, 32, 0.5);
-  background: #FFF;
+/*FORMULARIO*/
+.formulario{
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    align-self: center;
+    background: rgb(46, 194, 160);
+    border-radius: 25%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    
+   }
   
-}
+   form {
+       text-align: center;
+       overflow: hidden;
+        margin: 0;
+     }
+     .formulario input{
+       width: 40%;
+     }
+    .formulario div h2{
+       text-align: center; 
+    }
+   .formulario .boton{
+       border-radius: 50%;
+       background-color: rgb(215, 58, 51);
+       font-weight: bold;
+   }
+   .formulario .datos p{
+       font-weight: bold;
+       font-size: 20px;
+       color: rgb(215, 58, 51);
+   }
+/*FOOTER*/
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    
 
+}
+.footer p,a{
+    color: rgb(215, 58, 51);
+    text-decoration: none;
+
+}
 /*BOTON FLOTANTE- aside*/
-.redes a, .icon-redes{
-  text-decoration: none;
-  font-size: 2rem;
-  background-color: rgba(218, 165, 32, 0.5);
-  color: #fff;
-  display: block;
-  border-radius: 50%;
-  width: 4.0263vw;
-  height: 8.8vh;
-  text-align: center;
-  line-height: 3.4375rem;
+aside .social .redes img{
+    width: 5.3923vw;
+    height:  10.6vh;
+    
+    
 }
-.botonfloat{
-  position: fixed;
-  bottom: 3.2vh;
-  right: 1.4641vw;
-}
-.redes a{
-  display: none;
-}
-.botonfloat:hover .redes a{
-  display: block;
-}
-.redes a:hover{
-  background-color: #fff;
-  color: rgba(218, 165, 32, 0.5);
-}
-#menuboton:hover{
-  transform: rotate(6000deg);
-}
-/*pie de pagina*/
-footer{
-  background-color: #e9c46a;
-  height: 1.5rem;
-  margin-top: 1rem;
-}
-footer p{
-  color: #fdffb6;
-  font-size: 1rem;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
-}
+.redes ul li {
+    list-style: none;
+  }
+ aside{
+    position: fixed ;
+    right: 0;
+    
+ }
+
+
