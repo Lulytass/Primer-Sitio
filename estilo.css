@@ -159,6 +159,9 @@ html{
     
     
 }
+.ingredientesramen{
+    display: none;
+}
 aside .imagen{
     vertical-align:middle;
 }
@@ -208,33 +211,15 @@ aside .imagen{
     height: 30vh;
     width: 20hw;
     }
-    
     .nav{
     flex-direction: column;
     align-items: center;
     }
-    ASIDE{
-    flex: 1 1 100%;
-    }
     BODY{
     padding: 0 AUTO;
     }
-    .cuerpo .articulos .texto{
-    flex: 1 1 100%;
-    }
-    .cuerpo .articulos .video{
-    background-color: rgb(243, 181, 46);
-    flex: 1 1 100%; 
-    }
-    .cuerpo .articulos .receta{
-    background-color: rgb(243, 181, 46);
-    flex: 1 1 100%;
-    }
     ol li{
         margin: 2vw;
-    }
-    .cuerpo .articulos .platoterminado{
-    flex: 1 1 100%;
     }
     .aside{
         display: none;
@@ -243,8 +228,11 @@ aside .imagen{
         display: block;
     }
 }
-@media (max-width: 600px){
-    
+@media (max-width: 1268px){
+    .ingredientesramen{
+        display: block;
+        background-color: rgb(243, 181, 46);
+    }
        
 }
 
