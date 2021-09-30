@@ -36,18 +36,15 @@ html{
     display: flex;
     flex-flow: column nowrap;
     font-family:  sans-serif;
-
 }
 .barra{
     display: flex;
     align-items: center;
 }
 .logo{
- 
     flex: 2 1 auto;
 }
-.nav{
-    
+.nav{  
     flex: 7 1 auto;
     display: flex;
     
@@ -65,15 +62,6 @@ html{
     list-style: none;
     background-color: rgba(189, 147, 147, .5);
 }
-/*SUBMENU*/
-.submenu1{
-    display: none;
-}
-#submenu:hover .submenu1{
-    display: list-item;
-}
-
-
 /*CUERPO PRINCIPAL*/
 .cuerpo{
     background-color: black;
@@ -130,6 +118,9 @@ html{
 .cuerpo .articulos .masa{
     background-color: rgb(243, 181, 46);
     flex: 1 1 40%;
+}
+.cuerpo .articulos .masa .salsa2{
+    display: none;
 }
 .cuerpo .articulos .relleno{
     background-color: rgb(243, 181, 46);
@@ -197,34 +188,58 @@ aside .imagen{
     color: rgb(215, 58, 51);
     text-decoration: none;
 }
-@media all and (max-width: 1300px){
-.cuerpo{
-    display: flex;
-    }
-.logo img{
-    height: 30vh;
-    width: 20hw;
-}
-.nav{
-    flex-direction: column;
-    align-items: center;
-}
-article .videoreceta, .imgplatoterminado{
+
+/*MEDIA*/
+@media (max-width: 1300px){
+    article .videoreceta, .imgplatoterminado{
     display: flex;
     justify-content: center;
+    }
+}
+@media (max-width: 950px){
+    .articulos{
+    flex-direction: column;
+    }
+    .logo img{
+    height: 30vh;
+    width: 20hw;
+    }
+    .nav{
+    flex-direction: column;
+    align-items: center;
+    }
+    ASIDE{
+    flex: 1 1 100%;
+    display: flex;
+    }
+    BODY{
+    padding: 0 AUTO;
+    }
+    .cuerpo .articulos .texto{
+    flex: 1 1 100%;
+    }
+    .cuerpo .articulos .video{
+    background-color: rgb(243, 181, 46);
+    flex: 1 1 100%; 
+    }
+    .cuerpo .articulos .receta{
+    background-color: rgb(243, 181, 46);
+    flex: 1 1 100%;
+    }
+
+    .cuerpo .articulos .platoterminado{
+    flex: 1 1 100%;
+    }
+}
+@media (max-width: 400px){
+    aside{
+     display: none;
+     }
+    .cuerpo .articulos .masa .salsa2{
+        display: block;
+    }
 }
 
-@media all and(max-width: 575px){
-.articulos{
-    flex-direction: column;
-}
-aside {
-    display: none;
-}
-@media all and(max-width: 400px){
- 
-}
-}
 
 
 
