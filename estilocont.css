@@ -63,13 +63,6 @@ body{
     list-style: none;
     background-color: rgba(189, 147, 147, .5);
 }
-/*SUBMENU*/
-.submenu1{
-    display: none;
-}
-#submenu:hover .submenu1{
-    display: list-item;
-}
 
 /*FORMULARIO*/
 .formulario{
@@ -133,5 +126,14 @@ aside .social .redes img{
     right: 0;
     
  }
-
+ @media (max-width: 950px){
+    .logo img{
+        height: 30vh;
+        width: 20hw;
+        }
+        .nav{
+        flex-direction: column;
+        align-items: center;
+        } 
+ }
 

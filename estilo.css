@@ -230,14 +230,15 @@ aside .imagen{
     .cuerpo .articulos .platoterminado{
     flex: 1 1 100%;
     }
+   
 }
-@media (max-width: 400px){
+@media (max-width: 600px){
     aside{
-     display: none;
-     }
-    .cuerpo .articulos .masa .salsa2{
-        display: block;
-    }
+        display: none;
+        }
+       .cuerpo .articulos .masa .salsa2{
+           display: block;
+       }
 }
 
 
