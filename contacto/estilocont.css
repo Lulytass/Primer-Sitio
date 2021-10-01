@@ -11,13 +11,11 @@
 .padre{
     display: flex;
     flex-flow: column nowrap;
-}
-body{
-    background-color:rgb(38, 76, 89);
-}
-body{
     min-width: 570px;
+    background-image: url(../imagenes/super.jpg);
+
 }
+
 /*SCROLLBAR*/
 ::-webkit-scrollbar{
     width: 15px;
@@ -74,7 +72,7 @@ body{
     width: 50%;
     align-self: center;
     background: rgb(46, 194, 160);
-    border-radius: 25%;
+    border-radius: 25% 0 0 0 ;
     margin-top: 2vh;
     margin-bottom: 2vh;
     
@@ -86,19 +84,20 @@ body{
         margin: 0;
      }
      .formulario input{
-       width: 40%;
+       width: 50%;
      }
     .formulario div h2{
        text-align: center; 
     }
    .formulario .boton{
-       border-radius: 50%;
+       border-radius: 35% 0 35% 0;
        background-color: rgb(215, 58, 51);
        font-weight: bold;
+       margin-top: 2vh;
    }
    .formulario .datos p{
        font-weight: bold;
-       font-size: 20px;
+       font-size: 1.50rem;
        color: rgb(215, 58, 51);
    }
  /*REDES*/
@@ -106,13 +105,13 @@ body{
     justify-content: center;
     flex: 1 1 100%;
     display: none;
-
+    background-color: rgb(215, 58, 51);
 }
 
 body .redescelu img{
     width: 4.5vw;
     height:  9.6vh; 
-    
+ 
 }
 /*FOOTER*/
 .footer{
@@ -153,10 +152,10 @@ aside .social .redes img{
         } 
         .redescelu{
             display: flex;
-
         }
         .botonredes{
             display: none;
         }
+
  }
 
