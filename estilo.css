@@ -4,8 +4,8 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 *{
-    margin: 0px;
     padding: 1.6vh 0.73206vw;
+    margin: 0px;
     box-sizing: border-box;
 }
 html{
@@ -14,6 +14,9 @@ html{
 .padre{
     display: flex;
     flex-flow: column nowrap;
+}
+body{
+    min-width: 570px;
 }
 /*SCROLLBAR*/
 ::-webkit-scrollbar{
@@ -30,25 +33,24 @@ html{
 /*TITULO Y MENU*/
 .header{
     background: url("imagenes/menu2.jpg");
-    background-position: center;
     background-attachment:contain;
     background-size: cover;
     display: flex;
     flex-flow: column nowrap;
     font-family:  sans-serif;
 }
+
 .barra{
     display: flex;
     align-items: center;
 }
 .logo{
     flex: 2 1 auto;
+
 }
 .nav{  
     flex: 7 1 auto;
     display: flex;
-    
-    
 }
 .nav  a{
     text-decoration: none;
@@ -132,8 +134,9 @@ html{
 }
 .rellenoyarmado li h3:hover{
     color: rgb(215, 58, 51);
-    
+    font-family: 'Ephesis', cursive;
 }
+
 /*REDES*/
 .cuerpo .articulos .redes{
     justify-content: space-around;
@@ -142,7 +145,7 @@ html{
 }
 
 .redes img{
-    width: 4.3923vw;
+    width: 4.5vw;
     height:  9.6vh; 
     
 }
@@ -215,9 +218,6 @@ aside .imagen{
     flex-direction: column;
     align-items: center;
     }
-    BODY{
-    padding: 0 AUTO;
-    }
     ol li{
         margin: 2vw;
     }
@@ -226,6 +226,8 @@ aside .imagen{
      }
      .cuerpo .articulos .masa .salsa2{
         display: block;
+        
+        background-color: rgb(215, 58, 51);
     }
 }
 @media (max-width: 1268px){
@@ -234,6 +236,10 @@ aside .imagen{
         background-color: rgb(243, 181, 46);
     }
        
+}
+@media (max-width: 570px){
+
+
 }
 
 
