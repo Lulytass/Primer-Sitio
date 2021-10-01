@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "bolditalic.ttf";
+    src: url("fuentes/bolditalic.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+/*TITULO Y MENU*/
+.header{
+    background: url("imagenes/menu1.jpg");
+    background-position: center;
+    background-attachment:contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "bolditalic.ttf", sans-serif;
+    font-size: .75rem;
+
+
+}
+.barra{
+    display: flex;
+    align-items: center;
+}
+.logo{
+ 
+    flex: 2 1 auto;
+}
+.nav{
+   
+    flex: 7 1 auto;
+    display: flex;
+}
+.nav  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 11px;
+    padding: 0 10px;
+    letter-spacing: 2px;   
+}
+.nav li{
+    list-style: none;
+}
+/*SUBMENU*/
+.submenu1{
+    display: none;
+}
+#submenu:hover .submenu1{
+    display: list-item;
+}
+
+
+/*CUERPO PRINCIPAL*/
+.cuerpo{
+    background-color: black;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+.cuerpo .articulos{
+    background-color: crimson;
+    flex: 8 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.cuerpo .articulos .texto{
+    background-color: darkorange;
+    flex: 1 1 40%;
+}
+.texto h2 a{
+    text-decoration: none;
+    color:black;
+}
+.cuerpo .articulos .video{
+    background-color: darkorange;
+    flex: 1 1 40%; 
+}
+.cuerpo .articulos .receta{
+    background-color: darkorange;
+    flex: 1 1 40%;
+}
+.cuerpo .articulos .platoterminado{
+    flex: 1 1 40%;
+    align-self:center;
+}
+.cuerpo .articulos .platoterminado img{
+    height: 80vh;
+
+}
+.cuerpo .articulos .ingredientes{
+    background-color: darkorange;
+    flex: 1 1 40%;
+}
+.ingredientes ul li{
+    list-style: none;
+}
+.ingredientes ul li:hover{
+    color: crimson;
+    font-weight: bold;
+}
+
+.ingredientes h3{
+    text-align: center;
+}
+.ingredientes h4{
+    text-decoration: underline crimson 3px;
+}
+.cuerpo .articulos .masa{
+    background-color: darkorange;
+    flex: 1 1 40%;
+}
+.cuerpo .articulos .relleno{
+    background-color: darkorange;
+    flex: 1 1 40%;
+}
+.cuerpo .articulos .rellenoyarmado{
+    background-color: darkorange;
+    flex: 1 1 40%;
+}
+.rellenoyarmado li h3:hover{
+    content: "hola";
+    color: crimson;
+    
+}
+.cuerpo .articulos .redes{
+    justify-content: space-around;
+    flex: 1 1 100%;
+    display: flex;
+}
+.redes img{
+    width: 4.3923vw;
+    height:  9.6vh; 
+    
+}
+
+/*ASIDE*/
+.aside{
+    background-color: crimson;
+    flex: 2 1 auto;
+}
+.aside .imagen, .gyozamordida, .ramen, .cierre{
+    background-color: crimson;
+
+}
+.aside .gyozamordida img{
+    width: 18.5944vw;
+    height:40.64vh;
+}
+.aside .salsa{
+    background-color: darkorange;
+}
+.recetasalsa h4, p{
+    text-align: center;
+}
+.aside .proximasrecetas{
+    background-color: darkorange;
+}
+
+.aside .proximasrecetas .ramen img{
+    width: 18.5944vw;
+    height: 40.64vh;
+}
+
+.aside .proximasrecetas .cierre img{
+    background-color: crimson;
+
+}
+.loqueviene h3{
+    text-align: center;
+    text-decoration: underline crimson 3px;
+}
+/*FOOTER*/
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.footer p,a{
+    color: crimson;
+    text-decoration: none;
+
+}
+
+@media(max-width: 800px){
+
+}
+
+
