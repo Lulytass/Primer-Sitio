@@ -71,8 +71,7 @@
     flex-flow: column;
     width: 50%;
     align-self: center;
-    background: rgb(46, 194, 160);
-    border-radius: 25% 0 0 0 ;
+    background: rgba(46, 194, 160, .5);
     margin-top: 2vh;
     margin-bottom: 2vh;
     
@@ -106,10 +105,11 @@
     flex: 1 1 100%;
     display: none;
     background-color: rgb(215, 58, 51);
+
 }
 
 body .redescelu img{
-    width: 4.5vw;
+    width: 6.5vw;
     height:  9.6vh; 
  
 }
@@ -132,14 +132,17 @@ aside .social .redes img{
     height:  10.6vh;
     
     
+    
 }
 .redes ul li {
     list-style: none;
+    background: rgba(46, 194, 160, .5);
+    border-radius: 25%;
   }
  aside{
     position: fixed ;
     right: 0;
-    
+ 
  }
  @media (max-width: 950px){
     .logo img{
@@ -156,6 +159,9 @@ aside .social .redes img{
         .botonredes{
             display: none;
         }
+        .formulario input{
+            width: 80%;
+          }
 
  }
 

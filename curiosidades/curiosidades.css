@@ -1,0 +1,120 @@
+*{
+    padding: 1.6vh 0.73206vw;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    background-color: black;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+body{
+    min-width: 570px;
+}
+/*SCROLLBAR*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(46, 194, 160);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background: #ffffff;
+    border-radius: 50px;
+}
+/*TITULO Y MENU*/
+.header{
+    background: url("../imagenes/menu2.jpg");
+    background-attachment:contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family:  sans-serif;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex: 2 1 auto;
+
+}
+.nav{  
+    flex: 7 1 auto;
+    display: flex;
+}
+.nav  a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0 0.7320vw;
+    letter-spacing: 0.063rem; 
+    font-weight: bolder;
+    color: black;
+}
+.nav li{
+    list-style: none;
+    background-color: rgba(189, 147, 147, .5);
+}
+/*REDES*/
+.redes{
+    justify-content: space-around;
+    flex: 1 1 100%;
+    display: flex;
+}
+
+.redes img{
+    width: 4.5vw;
+    height:  7.6vh;  
+}
+/*FOOTER*/
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.footer p,a{
+    color: rgb(215, 58, 51);
+    text-decoration: none;
+}
+/*tarjetas*/
+
+article h1{
+    color: rgba(46, 194, 160);;
+    text-align: center;
+}
+
+article .row{
+display: flex;
+justify-content: center;
+
+}
+
+article .row .card{
+    height: 113vh;
+
+}
+
+article .row .card a{
+   margin-bottom: 3vh ;
+
+}
+div img{
+    width: 29vw;
+    height: 55vh;
+}
+
+.row div a:hover{
+    background: rgb(250, 248, 114);
+    transition: .3s;
+    font-weight: bold;
+}
+
+.card:hover{
+    box-shadow: 0px 15px 15px rgba(189, 147, 147, .5);
+    transform: translateY(-2.4vh) ;
+    background-color: rgb(243, 181, 46);
+}
