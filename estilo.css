@@ -14,8 +14,6 @@ html{
 .padre{
     display: flex;
     flex-flow: column nowrap;
-}
-body{
     min-width: 570px;
 }
 /*SCROLLBAR*/
@@ -33,8 +31,8 @@ body{
 /*TITULO Y MENU*/
 .header{
     background: url("imagenes/menu2.jpg");
+    background-position: center;
     background-attachment:contain;
-    background-size: cover;
     display: flex;
     flex-flow: column nowrap;
     font-family:  sans-serif;
@@ -215,8 +213,9 @@ aside .imagen{
     width: 20hw;
     }
     .nav{
-    flex-direction: column;
-    align-items: center;
+        display: block;
+        text-align: center;
+    
     }
     ol li{
         margin: 2vw;
@@ -228,6 +227,10 @@ aside .imagen{
         display: block;
         
         background-color: rgb(215, 58, 51);
+    }
+    .redes img{
+        width: 4.5vw;
+    height:  7.6vh; 
     }
 }
 @media (max-width: 1268px){

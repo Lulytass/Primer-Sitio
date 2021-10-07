@@ -9,10 +9,11 @@ html{
 .padre{
     display: flex;
     flex-flow: column nowrap;
-}
-body{
     min-width: 570px;
+    background: rgb(46, 194, 160);
+
 }
+
 /*SCROLLBAR*/
 ::-webkit-scrollbar{
     width: 15px;
@@ -28,8 +29,8 @@ body{
 /*TITULO Y MENU*/
 .header{
     background: url("../imagenes/menu2.jpg");
+    background-position: center;
     background-attachment:contain;
-    background-size: cover;
     display: flex;
     flex-flow: column nowrap;
     font-family:  sans-serif;
@@ -83,24 +84,15 @@ body{
 /*tarjetas*/
 
 article h1{
-    color: rgba(46, 194, 160);;
+    color: rgb(6, 37, 30);;
     text-align: center;
 }
-
 article .row{
-display: flex;
-justify-content: center;
+   display: flex;
 
 }
-
-article .row .card{
-    height: 113vh;
-
-}
-
-article .row .card a{
-   margin-bottom: 3vh ;
-
+.row .card{
+    margin: auto;
 }
 div img{
     width: 29vw;
@@ -117,4 +109,16 @@ div img{
     box-shadow: 0px 15px 15px rgba(189, 147, 147, .5);
     transform: translateY(-2.4vh) ;
     background-color: rgb(243, 181, 46);
+}
+@media (max-width: 950px){
+
+    .logo img{
+    height: 30vh;
+    width: 20hw;
+    }
+    .nav{
+        display: block;
+        text-align: center;
+    
+    }
 }
