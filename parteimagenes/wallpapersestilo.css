@@ -156,6 +156,15 @@ body{
    width: 70vw;
    height: 80vw;
 }
+/*FOTOS CON MODAL*/
+.corta{
+    width: 450px;
+    height: 250px;
+    }
+    .larga{
+        height: 400px;
+        width: 280px;
+    }
 /*BOTON FLOTANTE- aside*/
 aside .social .redes img{
     width: 4.5vw;
