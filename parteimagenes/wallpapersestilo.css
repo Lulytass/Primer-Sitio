@@ -225,5 +225,7 @@ body .redescelu img{
     .carrouselcontainer{
             display: NONE;
         }  
-
+    .row{
+        display: none;
+    }
  }
