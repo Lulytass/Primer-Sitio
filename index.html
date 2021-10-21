@@ -7,19 +7,20 @@
     <meta name="description" content="Recetas de cocina">
     <meta name="author" content="Lucía Tassi">
     <meta name="keywords" content="Recetas, Anime, Comida, Cocina">
+    <title>Cocinando Juntos</title>
     <link rel="icon" href="imagenes/logo.ico">
     <link rel="stylesheet" href="estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
-    <title>Cocinando Juntos</title>
+    <script class="alert alert-secondary">alert("¿Esta dispuesto a ver el mejor sitio de recetas del mundo mundial?")</script>
 </head>
 <body class="padre">
+
     <!--TITULO, BARRA NAVEGADORA-->
     <header class="header">
         <div class="barra">
-               <a href="index.html" class="logo">
+                <a href="index.html" class="logo">
                    <img src="imagenes/logo.png" alt="muñequita con tazon de ramen">
                 </a>
-            
                 <ul class="nav">
                         <li class="primermenu" class="menu"><a href="contacto/contacto.html">CONTACTO</a></li>
                         <li class="primermenu" class="menu"><a href="https://www.elperiodico.com/es/cata-mayor/actualidad-gastronomica/" target="_blanck">ACTUALIDAD <br> GASTRONÓMICA</a></li>
@@ -53,6 +54,7 @@
              <img  src="imagenes/gyoza1.jpg" alt="plato de Gyozas">
             </div>
             </article>
+                    <!--RECETA -->
             <article class="ingredientes">
                     <h3 >INGREDIENTES</h3>
                     <h4>MASA</h4>
@@ -72,13 +74,14 @@
                 </ul> 
             </article>
             <article class="masa">
-                    <h3 class="COMO HACER LA MASA">COMO HACEMOS LA MASA</h3>
+                    <h3>COMO HACEMOS LA MASA</h3>
                     <ol>
                         <li>Colocar el agua y la grasa en una olla a fuego medio hasta que se fundan.</li>
                         <li>Ya todo derretido, se agrega la harina y mezcla con cuchara para despues amasar.</li>
                         <li>Entonces se deja descansar por una hora tapado.</li>
                         <li>Pasado eso se estira la masa con un grosor de 2mm y se cortan circulos de unos 7cm de diámetro.</li>
                     </ol>
+                    <!--SALSA QUE SE VE EN CELULAR-->
                     <div class="salsa2">
                         <h3>SALSA PARA ACOMPAÑAR</h3>
                         <P>El como acompañarlos es tan importante como el dumpling en si.
@@ -98,10 +101,10 @@
             <!--REDES SOCIALES-->
             <nav class="redes">
                 <div>
-                    <a href="#" class="github"><img src="imagenes/personaje-github.png" alt=""></a>
-                    <a href="#" class="instagram"><img src="imagenes/instagram.png" alt=""></i></a>
-                    <a href="#" class="linkedin"><img src="imagenes/linkedin.png" alt=""></a>
-                    <a href="#" class="mail"><img src="imagenes/email.png" alt=""></a>
+                    <a href="https://github.com/Lulytass" target="_blank" class="github"><img src="imagenes/personaje-github.png" alt=""></a>
+                    <a href="https://www.instagram.com/lulytass/" target="_blank" class="instagram"><img src="imagenes/instagram.png" alt=""></i></a>
+                    <a href="https://www.linkedin.com/in/lucia-tassi-9b6a22211/" target="_blank" class="linkedin"><img src="imagenes/linkedin.png" alt=""></a>
+                    <a href="mailto: luly8608@gmail.com" class="mail"><img src="imagenes/email.png" alt=""></a>
                 </div>
             </nav>
         </div>
@@ -147,20 +150,39 @@
                     </ul>
                 </article>
                 <article>
-                     <div class="cierre">
-                    <iframe width="254" height="254" src="https://www.youtube.com/embed/4poyENnFKm4" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                     encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                     </div>
-                 </article>
-
+                    <div class="cierre">
+                        <iframe width="254" height="254" src="https://www.youtube.com/embed/4poyENnFKm4" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
             </article>
         </aside>
     </section>
+                    <!--modal que abre con boton de pie de pagina-->
+    <div class="modal modal-dialog-center" id="modalInfo" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Lucía Soledad Tassi</h5>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Estudiante de FrontEnd Developer en <a href="https://www.potrerodigital.org/" target="_blank">Potrero Digital</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" onclick="cerrarModal()" data-bs-dismiss="modal">CERRAR</button>
+                </div>
+          </div>
+        </div>
+      </div>
+                         <!--pie de pagina-->
     <footer class="footer">
-        
-       <p>DESARROLLADO POR <a href="https://github.com/Lulytass">Lucía Soledad Tassi</a> </p>
-
+       <p>DESARROLLADO POR <a href="https://github.com/Lulytass" target="_blank">Lucía Soledad Tassi</a>
+        <button type="button" onclick="abrirModal()" class="btn btn-danger">INFORMACIÓN</button> </p>
     </footer>
+
+    <script src="hoja.js"></script>
 </body>
 </html>
